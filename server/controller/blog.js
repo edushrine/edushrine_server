@@ -7,6 +7,7 @@ exports.createBlog = async(req,res)=>{
 
         const blog = new Blog(req.body)
         await blog.save()
+        console.log("Hello")
         
         res.status(201).json({msg:"Blog Created Successfully",blog})
 

@@ -171,8 +171,8 @@ exports.uploadfileCRM = async (req,res)=>{
                                 crm.area = data[i].area,
                                 crm.branch = req.params.id,
                                 crm.remarks = data[i].remarks,
-                                crm.comments = data[i].comments,
-                                crm.status = data[i].status,
+                                // crm.comments = data[i].comments,
+                                // crm.status = data[i].status,
                                 crm.save()
                             }
     

@@ -13,26 +13,22 @@ const crmSchema = new Schema({
       father_name:{
       type:String,
       trim:true,
-      required:[true, 'is required'],
-      },
+       },
 
       school_name:{
       type:String,
       trim:true,
-      required:[true, 'is required'],
-      },
+       },
 
       course:{
       type:String,
       trim:true,
-      required:[true, 'is required'],
-      },
+       },
 
       class:{
       type:String,
       trim:true,
-      required:[true, 'is required'],
-      },
+       },
 
       parent_phone:{
       type:Number,
@@ -43,8 +39,7 @@ const crmSchema = new Schema({
       area:{
         type:String,
         trim:true,
-        required:[true, 'is required'],
-        },
+         },
 
       branch:{
       type:Schema.Types.ObjectId,

@@ -72,3 +72,17 @@ exports.deleteCampus = async(req,res)=>{
         res.status(401).json({err:"Something went Wrong!!",error})
     }
 }
+
+/*******Fetch Campus based on user login*********** */
+
+exports.userCampus = async(req,res)=>{
+    console.log(req.params.id)
+    try{
+        res.status(201).json()
+        
+    }catch(error){
+        res.status(401).json({err:"Something went Wrong!!",error})
+
+    }
+}
+

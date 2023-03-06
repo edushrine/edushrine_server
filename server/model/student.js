@@ -19,13 +19,11 @@ const studentSchema = new Schema({
 
     admission_date:{
         type:Date,
-        required:[true,'is required']
-    },
+     },
 
     photo:{
         type:String,
-        required:[true,'is required']
-    },
+     },
 
     student_name:{
         type:String,
@@ -39,8 +37,7 @@ const studentSchema = new Schema({
 
     campus_address:{
         type:String,
-        required:[true,'is required']
-    },
+     },
     teaching_required_for:{
         course:{
             type:String,
@@ -81,8 +78,7 @@ const studentSchema = new Schema({
         area:{
             type:String,
             trim:true,
-            required:[true,'is required']
-        },
+         },
 
     },
 
@@ -145,13 +141,11 @@ const studentSchema = new Schema({
     father_email:{
         type:String,
         trim:true,
-        required:[true,'is required']
-    },
+     },
     mother_email:{
         type:String,
         trim:true,
-        required:[true,'is required']
-    },
+     },
 
     office_details:{
 
@@ -163,7 +157,7 @@ const studentSchema = new Schema({
         total_course_fee:{
             type:Number,
             trim:true,
-            required:[true,'is required']
+            default:0,
         },
         concession:{
             type:Number,

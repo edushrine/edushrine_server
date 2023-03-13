@@ -8,6 +8,7 @@ const studentSchema = new Schema({
 
     role:{
         type:String,
+        trim:true,
         default:""
     },
 
@@ -23,38 +24,46 @@ const studentSchema = new Schema({
 
     photo:{
         type:String,
+        trim:true,
      },
 
     student_name:{
         type:String,
+        trim:true,
         required:[true,'is required']
     },
 
     gender:{
         type:String,
+        trim:true,
         required:[true,'is required']
     },
 
     campus_address:{
         type:String,
+        trim:true,
      },
     teaching_required_for:{
         course:{
             type:String,
+            trim:true,
             required:[true,'is required']
         },
         subjects:{
             type:String,
+            trim:true,
             required:[true,'is required']
         },
     },
 
     batch_type:{
         type:String,
+        trim:true,
         required:[true,'is required']
     },
     batch_preferred:{
         type:String,
+        trim:true,
         required:[true,'is required']
     },
     // class:{
@@ -161,8 +170,7 @@ const studentSchema = new Schema({
         },
         concession:{
             type:Number,
-            trim:true,
-           default:0
+            default:0
         },
         total_fee:{
             type:Number,
@@ -229,6 +237,7 @@ const studentSchema = new Schema({
     },
     register_no:{
         type:String,
+        trim:true,
         
     },
     campus:{
@@ -238,6 +247,7 @@ const studentSchema = new Schema({
 
     board:{
         type:String,
+        trim:true,
         required:[true,'is required']
     },
     
@@ -268,7 +278,7 @@ const studentSchema = new Schema({
     course_materials:[
      {
         comments:String,
-        material:{
+         material:{
             type:Schema.Types.ObjectId,
             ref:'Course',
         }

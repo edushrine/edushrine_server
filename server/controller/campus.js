@@ -9,7 +9,7 @@ exports.createCampus = async(req,res)=>{
         const campusexist = await Campus.findOne({campus:req.body.campus})
         console.log(campusexist)
         if(campusexist){
-            return res.status(401).json({msg:"Campus already Exists!"})
+            return res.status(401).json({msg:`Campus ${req.body.campus} already Exists!`})
         }
 
         const campus = new Campus(req.body)

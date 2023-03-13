@@ -16,6 +16,7 @@ const adminSchema = new Schema({
     },
     phone_no:{
         type:String,
+        trim:true,
     },
   
     }, {timestamps:true})

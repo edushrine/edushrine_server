@@ -19,7 +19,7 @@ exports.createMarketingManager = async(req,res)=>{
 
         const existmarketingManager = await MarketingManager.findOne({email:email})
         if(existmarketingManager){
-            return res.status(401).json({msg:"Email already Exists!"})
+            return res.status(401).json({msg:`Manager ${name} already Exists`})
         }
         console.log(req.body)
         const marketingManager = new MarketingManager(req.body)
@@ -67,7 +67,7 @@ exports.getOneMarketingManager = async(req,res)=>{
 
 /***********Update MarketingManager */
 exports.updateMarketingManager = async(req,res)=>{
-    console.log(req.params)
+    console.log(req.body.password)
     try{
 
         const marketingManager = await MarketingManager.findById(req.params.id)

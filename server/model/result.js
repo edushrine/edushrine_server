@@ -16,6 +16,7 @@ const resultSchema = new Schema({
 
     register_no:{
         type:String,
+        trim:true,
     },
     student_name:{
         type:String,

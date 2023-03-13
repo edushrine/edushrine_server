@@ -14,7 +14,8 @@ const broadcastSchema = new Schema({
         trim:true,
     },
     description:{
-        type:String
+        type:String,
+        trim:true,
     },
   
     }, {timestamps:true})

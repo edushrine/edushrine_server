@@ -118,7 +118,7 @@ const studentSchema = new Schema({
     student_email:{
         type:String,
         trim:true,
-        required:[true,'is required']
+        
     },
     student_password:{
         type:String,

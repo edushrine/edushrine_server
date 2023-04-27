@@ -18,6 +18,7 @@ return jwt.sign({id},  process.env.JWT_SECRET, {
 exports.register = async (req,res) =>{
 
     console.log(req.body)
+    console.log("Hello")
     const {email,password,phone_no} = req.body
  
     try {
